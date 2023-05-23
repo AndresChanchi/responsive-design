@@ -18,7 +18,7 @@
 	<body>
 	   <section class="page-container">
 		 <header class="page-section page-section-header">
-		   <img src="./assets/img/logo.svg" alt="Logotipo de Batatabit, su logotipo es como una papa de color amarillo" />
+		   <img class="logo" src="./assets/img/logo.svg" alt="Logotipo de Batatabit, su logotipo es como una papa de color amarillo" />
 		   <div class="header--title_container">
 		     <h1>La próxima revolución en el intercambio de criptomonedas</h1>
 			 <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias</p>
@@ -37,7 +37,29 @@
 
 		 </header>
 		 <main class="page-section page-section-main">
-			 <section></section>
+			 <section class="main-exchange-container">
+			   <!--<img class="bitcoin-image" src="./assets/img/Bitcoin.svg" alt="Imagen del simbolo de Bitcoin color naranja" />
+               El img no permite manipular el padding derecho e izquierdo, por eso se opto por utilizar el img, para que se pueda manipular el fondo de la imagén a pesar de que no tiene color de fondo. El div si permite utilizar esto.
+			   -->
+			   <div class="bitcoin-image">
+			   </div>
+			   <div class="main-exchange-container--title">
+ 				<!-- Texto sobre bitcoin --> 
+			     <h2>Visibilizamos todas las tasas de cambio.</h2>
+			     <p>
+				  Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.
+				 </p>
+			   </div>
+			   <section class="main-tables-container">
+				 <div>
+				   <p>Monedas</p>
+				 </div>
+				 <div>
+				   <p>Comisiones</p>
+				 </div>
+				 <p>Actualizado el: <span id="time"></span></p>
+			   </section>
+			 </section>
 			 <section></section>
 			 <section></section>
 			 <section></section>
@@ -45,6 +67,7 @@
 		 <footer class="page-section page-section-footer">
 
 		 </footer>
-      </section>
+      </section> 
+	  <script src="script.js"></script>
 	</body>
 </html>
