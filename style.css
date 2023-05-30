@@ -191,6 +191,18 @@ html
   "stellar    stellar-value"
   ;
 }
+.second-cryptocurrency-container
+{
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-areas:
+  "bitrade    bitrade-value"
+  "bitpreco   bitpreco-value"
+  "novadax    novadax-value"
+  "coinext    coinext-value"
+  ;
+}
 .cryptocurrency
 {
 }
@@ -234,7 +246,38 @@ html
 
 /* Segunda Tabla en el orden de columnas y luego fila, sucesivamente */
 
-
+.cryptocurrency-bitrade
+{
+  grid-area: bitrade;
+}
+.cryptocurrency-bitrade-value
+{
+  grid-area: bitrade-value;
+}
+.cryptocurrency-bitpreco
+{
+  grid-area: bitpreco;
+}
+.cryptocurrency-bitpreco-value
+{
+  grid-area: bitpreco-value;
+}
+.cryptocurrency-novadax
+{
+  grid-area: novadax;
+}
+.cryptocurrency-novadax-value
+{
+  grid-area: novadax-value;
+}
+.cryptocurrency-coinext
+{
+  grid-area: coinext;
+}
+.cryptocurrency-coinext-value
+{
+  grid-area: coinext-value;
+}
 
 /* Aquí empieza la segunda sección de main*/
 
