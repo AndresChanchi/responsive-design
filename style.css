@@ -1,3 +1,4 @@
+/* Colores de los estilos de la página*/
 :root {
   --bitocoin-organge: #f7931a;
   --soft-orange: #ffe9d5;
@@ -21,23 +22,29 @@ html
   font-size: 62.5%;
   font-family: 'DM Sans', sans-serif;
 }
-
+/* Aquí empieza la maquetación de la página*/
 .page-container
 {
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: grid;
   grid-template-areas:
   "header"
   "main"
   "footer"
+  ;
 }
 .page-section 
 {
   /*
-  Colocaré algo aquí, no se xd 
+  Colocaré algo aquí si hay algo repetido
+  Generalmente en esta sección se coloca
+  estilos que se repite en común con otras secciones
+  como header, main, footer
   */
 }
+
+/* Aquí empieza los estilos del header*/
 
 .page-section-header
 {
@@ -111,6 +118,11 @@ html
   margin-left: 8px;
   background-image: url('https://res.cloudinary.com/dp852gaey/image/upload/v1685470828/responsive-design/assets/icons/down-arrow_soikyv.svg');
 }
+
+/*
+  Aquí empiezan los estilos de la sección main y terminan todos los estilos de header
+  También empieza la primera sección de main.
+ */
 .page-section-main
 {
   width: 100%;
@@ -160,7 +172,71 @@ html
   color: #757575; /* Color gris */
 }
 
+/* Aquí empiezan la sección de tabla en main con la información de las criptomoneda
+   Son 2 tablas en total
+ */
 
+.main-tables-container
+{
+}
+.first-cryptocurrency-container
+{
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-areas:
+  "bitcoin    bitcoin-value"
+  "ethereum   ethereum-value"
+  "ripple     ripple-value"
+  "stellar    stellar-value"
+  ;
+}
+.cryptocurrency
+{
+}
+.cryptocurrency-value
+{
+}
+/* Primera Tabla en el orden de columna y luego en fila, sucesivamente*/
+
+.cryptocurrency-bitcoin
+{
+  grid-area: bitcoin;
+}
+.cryptocurrency-bitcoin-value
+{
+  grid-area: bitcoin-value;
+}
+.cryptocurrency-ethereum
+{
+  grid-area: ethereum;
+}
+.cryptocurrency-ethereum-value
+{
+  grid-area: ethereum-value;
+}
+.cryptocurrency-ripple
+{
+  grid-area: ripple;
+}
+.cryptocurrency-ripple-value
+{
+  grid-area: ripple-value;
+}
+.cryptocurrency-stellar
+{
+  grid-area: stellar;
+}
+.cryptocurrency-stellar-value
+{
+  grid-area: stellar-value;
+}
+
+/* Segunda Tabla en el orden de columnas y luego fila, sucesivamente */
+
+
+
+/* Aquí empieza la segunda sección de main*/
 
 .page-section-footer
 {
