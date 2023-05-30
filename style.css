@@ -109,7 +109,7 @@ html
   width: 13px;
   height: 8px;
   margin-left: 8px;
-  background-image: url('./assets/icons/down-arrow.svg');
+  background-image: url('https://res.cloudinary.com/dp852gaey/image/upload/v1685470828/responsive-design/assets/icons/down-arrow_soikyv.svg');
 }
 .page-section-main
 {
@@ -138,7 +138,7 @@ html
   height: 200px;
   margin: 0 auto;
   margin-bottom: 50px;
-  background-image: url('./assets/img/Bitcoin.svg');
+  background-image: url('https://res.cloudinary.com/dp852gaey/image/upload/v1685470658/responsive-design/assets/img/Bitcoin_va5jed.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
