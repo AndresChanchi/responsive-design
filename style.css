@@ -9,6 +9,7 @@
   --grey: #bababa;
   --off-white: #faf8f7;
   --just-white: #fff;
+  --other-grey: #757575;
 } 
 
 *
@@ -169,7 +170,7 @@ html
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.6rem;
-  color: #757575; /* Color gris */
+  color: var(--other-grey);
 }
 
 /* Aquí empiezan la sección de tabla en main con la información de las criptomoneda
@@ -197,41 +198,31 @@ html
   line-height. 2.3rem;
   color: var(--bitcoin-orange);
 }
+.cryptocurrency-table-title
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cryptocurrency-container
+{
+  width: 90%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 0 auto;
+  display: grid;
+  font-family: "Inter", sans-serif;
+  grid-template-areas:
+  "first-currency    first-value"
+  "second-currency   second-value"
+  "third-currency    third-value"
+  "fourth-currency   fourth-value"
+  ;
+  gap: 1.3px;
+}
 
-.first-cryptocurrency-container
-{
-  width: 90%;
-  min-width: 230px;
-  max-width: 300px;
-  height: 250px;
-  margin: 0 auto;
-  display: grid;
-  font-family: "Inter", sans-serif;
-  grid-template-areas:
-  "bitcoin    bitcoin-value"
-  "ethereum   ethereum-value"
-  "ripple     ripple-value"
-  "stellar    stellar-value"
-  ;
-}
-.second-cryptocurrency-container
-{
-  width: 90%;
-  min-width: 230px;
-  max-width: 300px;
-  height: 250px;
-  margin: 0 auto;
-  display: grid;
-  font-family: "Inter", sans-serif;
-  display: grid;
-  grid-template-areas:
-  "bitrade    bitrade-value"
-  "bitpreco   bitpreco-value"
-  "novadax    novadax-value"
-  "coinext    coinext-value"
-  ;
-}
-.cryptocurrency
+.cryptocurrency, .cryptocurrency-value
 {
   display: flex;
   align-items: center;
@@ -242,82 +233,54 @@ html
   color: var(--grey);
   background-color: var(--just-white);
 }
-/*
-En caso de que se quiera estilizar la segunda columna, pero no me engañaron
-eran los mismo estilos en toda la tabla, asi que utilice cryptocurrency :S
 .cryptocurrency-value
 {
-}
-*/
-/* Primera Tabla en el orden de columna y luego en fila, sucesivamente*/
-
-.cryptocurrency-bitcoin
-{
-  grid-area: bitcoin;
-}
-.cryptocurrency-bitcoin-value
-{
-  grid-area: bitcoin-value;
-}
-.cryptocurrency-ethereum
-{
-  grid-area: ethereum;
-}
-.cryptocurrency-ethereum-value
-{
-  grid-area: ethereum-value;
-}
-.cryptocurrency-ripple
-{
-  grid-area: ripple;
-}
-.cryptocurrency-ripple-value
-{
-  grid-area: ripple-value;
-}
-.cryptocurrency-stellar
-{
-  grid-area: stellar;
-}
-.cryptocurrency-stellar-value
-{
-  grid-area: stellar-value;
+  color: var(--other-grey);
 }
 
-/* Segunda Tabla en el orden de columnas y luego fila, sucesivamente */
+/* Tabla en el orden de columna y luego en fila, sucesivamente */
 
-.cryptocurrency-bitrade
+/* Borde de la esquina superior izquierda*/
+.cryptocurrency-bitcoin, .cryptocurrency-bitrade
 {
-  grid-area: bitrade;
+  grid-area: first-currency;
+  border-radius: 15px 0 0 0;
 }
-.cryptocurrency-bitrade-value
+/* Borde de la esquina superior derecha*/
+.cryptocurrency-bitcoin-value, .cryptocurrency-bitrade-value
 {
-  grid-area: bitrade-value;
+  grid-area: first-value;
+  border-radius: 0 15px 0 0;
 }
-.cryptocurrency-bitpreco
+.cryptocurrency-ethereum, .cryptocurrency-bitpreco
 {
-  grid-area: bitpreco;
+  grid-area: second-currency;
 }
-.cryptocurrency-bitpreco-value
+.cryptocurrency-ethereum-value, .cryptocurrency-bitpreco-value
 {
-  grid-area: bitpreco-value;
+  grid-area: second-value;
 }
-.cryptocurrency-novadax
+.cryptocurrency-ripple, .cryptocurrency-novadax
 {
-  grid-area: novadax;
+  grid-area: third-currency;
 }
-.cryptocurrency-novadax-value
+.cryptocurrency-ripple-value, .cryptocurrency-novadax-value
 {
-  grid-area: novadax-value;
+  grid-area: third-value;
 }
-.cryptocurrency-coinext
+/* Borde de la esquina inferior izquierda */
+.cryptocurrency-stellar, .cryptocurrency-coinext
 {
-  grid-area: coinext;
+  grid-area: fourth-currency;
+  border-radius: 0 0 0 15px;
 }
-.cryptocurrency-coinext-value
+/* Borde de la esquina inferior derecha*/
+.cryptocurrency-stellar-value, .cryptocurrency-coinext-value
 {
-  grid-area: coinext-value;
+  grid-area: fourth-value;
+  border-radius: 0 0 15px 0;
 }
+
 
 /* Aquí empieza la segunda sección de main*/
 
