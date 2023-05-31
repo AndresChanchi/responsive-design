@@ -1,6 +1,6 @@
 /* Colores de los estilos de la página*/
 :root {
-  --bitocoin-organge: #f7931a;
+  --bitcoin-orange: #f7931a;
   --soft-orange: #ffe9d5;
   --secondary-blue: #1a9af7;
   --soft-blue: #e7f5ff;
@@ -179,11 +179,34 @@ html
 .main-tables-container
 {
 }
+.cryptocurrency-table
+{
+  width: 70%;
+  min-width: 235px;
+  max-width: 500px;
+  height: 360px;
+  margin: 0 auto;
+  display: grid;
+  font-family: "Inter", sans-serif;
+}
+.cryptocurrency-table .cryptocurrency-table-title
+{
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height. 2.3rem;
+  color: var(--bitcoin-orange);
+}
+
 .first-cryptocurrency-container
 {
-  width: auto;
-  height: auto;
+  width: 90%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 0 auto;
   display: grid;
+  font-family: "Inter", sans-serif;
   grid-template-areas:
   "bitcoin    bitcoin-value"
   "ethereum   ethereum-value"
@@ -193,8 +216,13 @@ html
 }
 .second-cryptocurrency-container
 {
-  width: auto;
-  height: auto;
+  width: 90%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 0 auto;
+  display: grid;
+  font-family: "Inter", sans-serif;
   display: grid;
   grid-template-areas:
   "bitrade    bitrade-value"
@@ -205,10 +233,22 @@ html
 }
 .cryptocurrency
 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: var(--grey);
+  background-color: var(--just-white);
 }
+/*
+En caso de que se quiera estilizar la segunda columna, pero no me engañaron
+eran los mismo estilos en toda la tabla, asi que utilice cryptocurrency :S
 .cryptocurrency-value
 {
 }
+*/
 /* Primera Tabla en el orden de columna y luego en fila, sucesivamente*/
 
 .cryptocurrency-bitcoin
