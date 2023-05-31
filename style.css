@@ -237,7 +237,21 @@ html
 {
   color: var(--other-grey);
 }
-
+.cryptocurrency-value .trending-down, .cryptocurrency-value .trending-up
+{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  background-image: url("https://res.cloudinary.com/dp852gaey/image/upload/v1685470830/responsive-design/assets/icons/trending-down_ik0nkx.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
+}
+.cryptocurrency-value .trending-up
+{
+  background-image: url("https://res.cloudinary.com/dp852gaey/image/upload/v1685470830/responsive-design/assets/icons/trending-up_ncq1io.svg");
+}
 /* Tabla en el orden de columna y luego en fila, sucesivamente */
 
 /* Borde de la esquina superior izquierda*/
