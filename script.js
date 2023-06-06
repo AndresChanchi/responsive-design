@@ -8,9 +8,13 @@ let horaFormateada = fechaHoraActual.getHours() + ':' + fechaHoraActual.getMinut
 // Concatenar el texto y la fecha formateada
 let textoCompleto = fechaFormateada + ' ' + horaFormateada;
 
-// Obtener el elemento por su id y asignarle el contenido
-let elementoFechaActual = document.getElementById("time");
-elementoFechaActual.innerHTML = textoCompleto;
+// Obtener el elemento por su clase y asignarle el contenido
+let elementosFechaActual = document.getElementsByClassName("time");
+
+// Recorrer los elementos y asignarles el contenido
+for (let i = 0; i < elementosFechaActual.length; i++) {
+  elementosFechaActual[i].innerHTML = textoCompleto;
+}
 
 // Función auxiliar para obtener el nombre del mes en español
 function obtenerNombreMes(numeroMes) {

@@ -190,7 +190,7 @@ html
   display: grid;
   font-family: "Inter", sans-serif;
 }
-.cryptocurrency-table .cryptocurrency-table-title
+.cryptocurrency-table .cryptocurrency-table--title, .cryptocurrency-table .cryptocurrency-table--title2
 {
   margin-bottom: 15px;
   font-size: 1.8rem;
@@ -198,7 +198,11 @@ html
   line-height. 2.3rem;
   color: var(--bitcoin-orange);
 }
-.cryptocurrency-table-title
+.cryptocurrency-table .cryptocurrency-table--title2
+{
+  color: var(--secondary-blue);
+}
+.cryptocurrency-table--title, .cryptocurrency-table--title2
 {
   display: flex;
   justify-content: center;
@@ -294,7 +298,25 @@ html
   grid-area: fourth-value;
   border-radius: 0 0 15px 0;
 }
-
+.cryptocurrency-table--date, .cryptocurrency-table--date2
+{
+  width: 205px;
+  height: 30px;
+  margin: 15px auto;
+  padding: 8px;
+  background-color: var(--soft-orange);
+  border-radius: 8px
+}
+.cryptocurrency-table--date2
+{
+  background-color: var(--soft-blue);
+}
+.cryptocurrency-table--date p, .cryptocurrency-table--date2 p
+{
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: var(--warm-black);
+}
 
 /* Aquí empieza la segunda sección de main*/
 
