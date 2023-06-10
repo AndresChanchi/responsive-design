@@ -22,6 +22,7 @@ html
 {
   font-size: 62.5%;
   font-family: 'DM Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 /* Aquí empieza la maquetación de la página*/
 .page-container
@@ -368,7 +369,7 @@ html
   width: 90%;
   min-width: 288px;
   max-width: 400px;
-  height: 150px;
+  min-height: 150px;
   margin: 15px auto;
   padding: 15px;
   background-color: var(--black);
@@ -416,6 +417,33 @@ html
   line-height: 1.8rem;
   color: #808080; /* Color blanco con gris*/ 
 }
+/* Aquí empieza la tercera o penúltima sección, la sección de la imagen*/
+
+.bitcoin-img-container
+{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  height: 60vh;
+  background-image: url("https://res.cloudinary.com/dp852gaey/image/upload/v1685470659/responsive-design/assets/img/bitcoinbaby2x_xigxkg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bitcoin-img-container h2
+{
+  padding-top: 60px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+
+/* Aquí empieza la última sección de la sección main */
+
+
 /*Aquí empieza la sección de footer, la última sección*/
 
 .page-section-footer
